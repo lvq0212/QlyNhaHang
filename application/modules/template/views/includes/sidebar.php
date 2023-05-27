@@ -31,14 +31,12 @@
 			"complete_order" => array("controller" => "order","method"=> "completelist","permission" => "read"),
 			"cancel_order" => array("controller" => "order","method" => "cancellist","permission" => "read"),
 			"kitchen_dashboard" => array("controller" => "order","method"=> "allkitchen","permission" => "read"),
-			"counter_dashboard" => array("controller" => "order","method"=> "counterboard","permission" => "read"),
-			"counter_list" => array("controller" => "order","method"=> "counterlist","permission" => "read")
+			"counter_dashboard" => array("controller" => "order","method"=> "counterboard","permission" => "read")
 		);
 		$HmvcMenu2["reservation"] = array(
     		"icon" => "<i class='fa fa-tags' aria-hidden='true'></i>", 
     		"reservation" => array("controller" => "reservation","method"     => "index","permission" => "read"), 
-   			"reservation_table" => array("controller" => "reservation","method" => "tablebooking","permission" => "read"),
-			"unavailable_day" => array("controller" => "reservation","method" => "unavailablelist","permission" => "read"), 
+   			"reservation_table" => array("controller" => "reservation","method" => "tablebooking","permission" => "read"), 
 			"reservasetting" => array("controller" => "reservation","method" => "setting","permission" => "read"),   
 		);
 		$HmvcMenu2["purchase"] = array(
@@ -131,27 +129,11 @@
 			       
 			   "emp_sal_payment" => array("controller" => "Employees","method" => "emp_payment_view","permission" => "view") 
 		   ),
-			"attendance" => array( 
-				'atn_form'    => array("controller" => "Home","method" => "index","permission" => "read"), 
-				'atn_report'  => array("controller" => "Home","method"     => "attenlist","permission" => "read") 
-				),
-			"circularprocess" => array(
-				'add_canbasic_info'  => array("controller" => "Candidate","method" => "caninfo_create","permission" => "create"), 
-				'can_basicinfo_list' => array("controller" => "Candidate","method" => "candidateinfo_view","permission" => "read"),
-				"candidate_shortlist" => array("controller" => "Candidate_select","method" => "create_shortlist","permission" => "create"), 
-			"candidate_interview" => array("controller" => "Candidate_select","method"=> "create_interview","permission" => "create"),     
-			"candidate_selection" => array("controller" => "Candidate_select","method"=> "create_selection","permission" => "create")
-			),
 			"department" => array(
 				"department" => array("controller" => "Department_controller","method" => "create_dept","permission" => "create"), 
 				"add_division" => array("controller" => "Division_controller","method" => "division_form","permission" => "create"), 
 				"division_list" => array("controller" => "Division_controller","method"=> "index","permission" => "read") 
-		   ),
-		   "payroll" => array(
-			   "salary_type_setup" => array("controller" => "Payroll","method" => "create_salary_setup","permission" => "read"), 
-			   "salary_setup" => array("controller" => "Payroll","method" => "create_s_setup","permission" => "create"), 
-			   "salary_generate" => array("controller" => "Payroll","method"=> "create_salary_generate","permission" => "create")			    
-		   ),
+		   )
 		   
 		);
         if(isset($HmvcMenu2) && $HmvcMenu2!=null && sizeof($HmvcMenu2) > 0)
@@ -272,21 +254,6 @@
             </ul>
         </li>
         
-        <?php } ?>
-        
-
-        <li class="treeview <?php echo (($this->uri->segment(2)=="message")?"active":null) ?>">
-            <a href="#">
-                <i class="ti-comments"></i><span><?php echo display('message')?></span>
-                <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                </span>
-            </a>
-            <ul class="treeview-menu">
-                <li><a href="<?php echo base_url('dashboard/message/new_message') ?>"><?php echo display('new')?></a></li>
-                <li><a href="<?php echo base_url('dashboard/message/index') ?>"><?php echo display('inbox')?></a></li>
-                <li><a href="<?php echo base_url('dashboard/message/sent') ?>"><?php echo display('sent')?></a></li> 
-            </ul>
-        </li>       
+        <?php } ?>       
     </ul> 
 </div> <!-- /.sidebar -->
