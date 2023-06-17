@@ -475,7 +475,7 @@ class Item_food extends MX_Controller {
 			 $sheet = $spreadsheet->getActiveSheet();
 			 $sheet->setCellValue('A1', 'Category Name');
 			 $sheet->setCellValue('B1', 'Parent Category');
-			 $sheet->setCellValue('C1', 'Kitchen Name');
+	//		 $sheet->setCellValue('C1', 'Kitchen Name');
 			 $sheet->setCellValue('D1', 'Food Name');
 			 $sheet->setCellValue('E1', 'Description');
 			 $sheet->setCellValue('F1', 'Status');
@@ -486,7 +486,7 @@ class Item_food extends MX_Controller {
                 foreach($arrayfood as $row){
                     $sheet->SetCellValue('A'.$rowCount, $row['category'],'UTF-8');
 					$sheet->SetCellValue('B'.$rowCount, $row['parent'],'UTF-8');
-                    $sheet->SetCellValue('C'.$rowCount, $row['kitchen'],'UTF-8');
+  //                  $sheet->SetCellValue('C'.$rowCount, $row['kitchen'],'UTF-8');
                     $sheet->SetCellValue('D'.$rowCount, $row['item'],'UTF-8');
                     $sheet->SetCellValue('E'.$rowCount, $row['description'],'UTF-8');
                     $sheet->SetCellValue('F'.$rowCount, $row['status'],'UTF-8');

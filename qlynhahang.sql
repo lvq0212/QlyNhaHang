@@ -5156,12 +5156,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `firstname`, `lastname`, `about`, `waiter_kitchenToken`, `email`, `password`, `password_reset_token`, `image`, `last_login`, `last_logout`, `ip_address`, `counter`, `status`, `is_admin`) VALUES
-(2, 'Trần', 'Quang', NULL, NULL, 'admin@example.com', '827ccb0eea8a706c4c34a16891f84e7b', '', './assets/img/user/m2.png', '2021-11-14 09:06:04', '2021-11-07 16:02:03', '::1', NULL, 1, 1),
-(165, 'Hoàng', 'Hà', NULL, NULL, 'hmisahaq@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
-(166, 'Nguyễn', 'Quốc Đạt', NULL, NULL, 'ainal@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, '2020-12-17 12:30:42', '2020-12-17 12:30:31', '::1', NULL, 1, 0),
-(168, 'Lê ', 'Quân', '', NULL, 'levanquan2k1@gmail.com', 'e99a18c428cb38d5f260853678922e03', NULL, './assets/img/user/abt.jpg', NULL, NULL, NULL, NULL, 1, 0),
-(177, 'Quang', 'Lâm', NULL, NULL, 'dimaria@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
-(178, NULL, NULL, NULL, NULL, 'nhahangchanay@gmail.com', 'e99a18c428cb38d5f260853678922e03', NULL, NULL, '2022-11-07 19:14:03', NULL, '::1', NULL, 1, 1);
+(2, 'Trần', 'Quang', NULL, NULL, 'adminnhahang@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', '', './assets/img/user/m2.png', '2021-11-14 09:06:04', '2021-11-07 16:02:03', '::1', NULL, 1, 1),
+(165, 'Hoàng', 'Hà', NULL, NULL, 'customer.com', '827ccb0eea8a706c4c34a16891f84e7b', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
+(166, 'Nguyễn', 'Quốc Đạt', NULL, NULL, 'abcd.com', '827ccb0eea8a706c4c34a16891f84e7b', NULL, NULL, '2020-12-17 12:30:42', '2020-12-17 12:30:31', '::1', NULL, 1, 0),
+(168, 'Lê ', 'Quân', '', NULL, 'levanquan2k1@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', NULL, './assets/img/user/abt.jpg', NULL, NULL, NULL, NULL, 1, 0),
+(177, 'Quang', 'Lâm', NULL, NULL, 'dimaria@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0),
+(178, NULL, NULL, NULL, NULL, 'nhahangchanay@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', NULL, NULL, '2022-11-07 19:14:03', NULL, '::1', NULL, 1, 1);
 
 -- --------------------------------------------------------
 
