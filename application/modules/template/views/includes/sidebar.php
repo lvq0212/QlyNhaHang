@@ -47,7 +47,7 @@
 	        "purchase_return" => array("controller" => "purchase","method" => "return_form","permission" => "create"),
 	        "return_invoice" => array("controller" => "purchase","method" => "return_invoice","permission" => "create"),
 			"supplier_manage" => array("controller" => "supplierlist","method"     => "index","permission" => "read"), 
-			"supplier_ledger" => array("controller" => "supplierlist","method" => "supplier_ledger_report","permission" => "read"),
+		//	"supplier_ledger" => array("controller" => "supplierlist","method" => "supplier_ledger_report","permission" => "read"),
 			"stock_out_ingredients" => array("controller" => "purchase","method" => "stock_out_ingredients","permission" => "read"),
 		); 
 		$HmvcMenu2["report"] = array(
@@ -63,11 +63,11 @@
 			"sell_report_delvirytype" => array("controller" => "reports","method"=> "sellrptdelvirytype","permission" => "read"),
 			"sell_report_casher" => array("controller" => "reports","method" => "sellrptCasher","permission" => "read")),
 			
-			"sell_report_cashregister" => array("controller" => "reports","method" => "cashregister","permission" => "read"),
-			"sell_report_filter" => array("controller" => "reports","method"=> "sellrpt2","permission" => "read"),
-			"sele_by_date" => array("controller" => "reports", "method" => "sellrptbydate", "permission" => "read"),
-			"commission" => array("controller" => "reports","method"=> "payroll_commission","permission" => "read"), 
-      		"sale_by_table" => array("controller" => "reports","method"=> "table_sale","permission" => "read")
+		//	"sell_report_cashregister" => array("controller" => "reports","method" => "cashregister","permission" => "read"),
+		//	"sell_report_filter" => array("controller" => "reports","method"=> "sellrpt2","permission" => "read"),
+		//	"sele_by_date" => array("controller" => "reports", "method" => "sellrptbydate", "permission" => "read"),
+		//	"commission" => array("controller" => "reports","method"=> "payroll_commission","permission" => "read"), 
+      	//	"sale_by_table" => array("controller" => "reports","method"=> "table_sale","permission" => "read")
 		);
 		$HmvcMenu2["itemmanage"] = array(
     		"icon"           => "<i class='fa fa-cube' aria-hidden='true'></i>", 
