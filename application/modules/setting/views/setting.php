@@ -130,17 +130,18 @@
                         <div class="col-xs-1">
                             <input name="storevat" type="text" class="form-control" id="storevat" placeholder="<?php echo display('vatset') ?>"  value="<?php echo $setting->vat ?>" >
                         </div>
-                        <label for="vatnumber" class="col-xs-2 col-form-label"><?php echo display('tinvat') ?></label>
-                        <div class="col-xs-3">
+                        <!-- thuế VAT -->
+                        <!-- <label for="vatnumber" class="col-xs-2 col-form-label"><?php echo display('tinvat') ?></label> -->
+                        <!-- <div class="col-xs-3">
                             <input name="vatnumber" type="text" class="form-control" id="vatnumber" placeholder="<?php echo display('tinvat') ?>"  value="<?php echo $setting->vattinno ?>" >
-                        </div>
-                         <label for="isvatnumber" class="col-xs-2 col-form-label"><?php echo display('showhidevattin') ?></label>
+                        </div> -->
+                         <!-- <label for="isvatnumber" class="col-xs-2 col-form-label"><?php echo display('showhidevattin') ?></label>
                         <div class="col-xs-1">
                         	<div class="checkbox checkbox-success">
                                     <input type="checkbox" name="isvatnumber" value="1" <?php if($setting->isvatnumshow==1){echo "checked";}?> id="isvatnumber">
                                         <label for="isvatnumber"></label>
                                     </div>
-                        </div>
+                        </div> -->
                     </div>
                     
 					<div class="form-group row">
@@ -149,12 +150,13 @@
                             <?php echo form_dropdown('currency',$currencyList,$setting->currency, 'class="form-control"') ?>
                         </div>
                     </div>
-                    <div class="form-group row">
+                   <!-- thoi gian giao hang som nhat -->
+                    <!-- <div class="form-group row"> 
                         <label for="delivary_time" class="col-xs-3 col-form-label"><?php echo display('mindeltime') ?></label>
                         <div class="col-xs-9">
                             <input name="delivary_time" type="text" class="form-control" id="delivary_time" placeholder="<?php echo display('mindeltime') ?>"  value="<?php echo $setting->min_prepare_time ?>" >
                         </div>
-                    </div>  
+                    </div>   -->
                     <div class="form-group row">
                         <label for="footer_text" class="col-xs-3 col-form-label"><?php echo display('language') ?></label>
                         <div class="col-xs-9">
@@ -188,12 +190,13 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group row">
+                    <!-- can chinh ung dung -->
+                    <!-- <div class="form-group row">
                         <label for="footer_text" class="col-xs-3 col-form-label"><?php echo display('site_align') ?></label>
                         <div class="col-xs-9">
                             <?php echo form_dropdown('site_align', array('LTR' => display('left_to_right'), 'RTL' => display('right_to_left')) ,$setting->site_align, 'class="form-control"') ?>
                         </div>
-                    </div> 
+                    </div>  -->
 
                     <div class="form-group row">
                         <label for="power_text" class="col-xs-3 col-form-label"><?php echo display('powered_by'); ?></label>

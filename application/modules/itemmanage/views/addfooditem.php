@@ -78,6 +78,7 @@
                     <div class="form-group row">
                         <label for="category" class="col-sm-4 col-form-label"><?php echo display('select_kitchen') ?></label>
                         <div class="col-sm-8">
+                        <!-- <label for="kitchen">Common Kitchen</label> -->
                         <select name="kitchen" class="form-control" required="">
                             <option value="" selected="selected"><?php echo display('kitchen_name') ?></option> 
                             <?php foreach($allkitchen as $kitchen){?>

@@ -1519,7 +1519,7 @@ INSERT INTO `language` (`id`, `phrase`, `english`, `vietnam`) VALUES
 (260, 'list_payment_type', 'List of Payment Type', 'Danh sách thanh toán'),
 (261, 'payment_period', 'Payment Period', 'Kỳ thanh toán'),
 (262, 'payment_type', 'Payment Type', 'Kiểu thanh toán'),
-(263, 'time', 'Punch Time', 'Thời gian chấm công'),
+(263, 'time', 'Punch Time', 'Thời gian làm'),
 (264, 'shift', 'Shift', 'Ca làm'),
 (265, 'location', 'Location', 'Địa điểm'),
 (266, 'logtype', 'Log Type', 'Loại nhật ký'),

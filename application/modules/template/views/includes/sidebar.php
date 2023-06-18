@@ -80,7 +80,7 @@
    				"food_list" => array("controller" => "item_food","method" => "index","permission" => "read"),
 				"add_group_item" => array("controller" => "item_food","method" => "addgroupfood","permission" => "read"),
 	            "food_varient" => array("controller" => "item_food", "method"  => "foodvarientlist","permission" => "read"), 
-	            "food_availablity" => array("controller" => "item_food","method"     => "availablelist","permission" => "read"),
+	            // "food_availablity" => array("controller" => "item_food","method"     => "availablelist","permission" => "read"),
 				"menu_type" => array("controller" => "item_food", "method"  => "todaymenutype","permission" => "read")
 				),
 		);
@@ -88,7 +88,7 @@
     		"icon"           => "<i class='fa fa-gear' aria-hidden='true'></i>", 
             "payment_setting" => array(
 				"paymentmethod_list" => array("controller" => "paymentmethod","method" => "index","permission" => "read"),
-				"paymentmethod_setup" => array("controller" => "paymentmethod","method"=> "paymentsetup","permission" => "read"), 
+			//	"paymentmethod_setup" => array("controller" => "paymentmethod","method"=> "paymentsetup","permission" => "read"), 
 				"shipping_setting" => array("controller" => "shippingmethod","method" => "index","permission" => "read")
 			),
     		"table_manage" => array(
@@ -98,7 +98,7 @@
     		"customer_type" => array(
 				"customer_list" => array("controller" => "customerlist","method"  => "index","permission" => "read"), 
     			"customertype_list" => array("controller" => "customertype","method" => "index","permission" => "read"), 
-				"list_of_card_terminal" => array("controller" => "card_terminal","method" => "index","permission" => "read")
+			//	"list_of_card_terminal" => array("controller" => "card_terminal","method" => "index","permission" => "read")
     		),
 			"kitchen_setting" => array(
     			"kitchen_list" => array("controller" => "kitchensetting","method" => "index","permission" => "read"), 
